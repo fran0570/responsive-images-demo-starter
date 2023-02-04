@@ -2,7 +2,7 @@ body {
     padding: 0 2rem;
 }
 
-/* this will ensure that the image don't get deformed "squished" or stretch */
+/* this will ensure that the images don't get deformed, "squished" or stretch */
 img, object {
     max-width: 100%;
     height: auto;

@@ -8,8 +8,10 @@
     <title>Responsive Images</title>
 </head>
 <body>
+    <!-- 4 different responsive image techiniques -->
     <h1>Responsive Images</h1>
     <section>
+        <!-- In this situation we want to display the same image but an appropriately sized version depending on the display. -->
         <h2>Same image in different sizes this is max-width method</h2>
         <img srcset="img/placeholder_320x320.png 320w,
                      img/placeholder_640x400.png 640w,
@@ -32,6 +34,7 @@
              alt="Placeholder Image">
     </section>
     <section>
+        <!-- Same size different resolution refers to providing images for higher density displays. For example, a 4 inch display with a resolution of 480px by 480px is not the same as a 4 inch display with a resolution of 960px by 960px. -->
         <h2>Same size image with different resolutions</h2>
         <!-- 1x pixel 2x device pixel (density) 3x device pixel (density) -->
         <img srcset="img/placeholder_320x320.png 1x,
@@ -42,6 +45,7 @@
              class="avatar">
     </section>
     <section>
+        <!-- Combination of resolution switching and art direction. The art direction problem is different than resolution switching. With resolution switching we’re really trying to serve up the same image each time but at resolutions that make sense for the user and device. -->
         <h2>Different images at different screen sizes and resolutions</h2>
         <picture>
             <source srcset="img/fall-dog-1200.jpg 1x,
@@ -50,7 +54,7 @@
                     media="(min-width: 1200px)">
             <source srcset="img/fall-dog-900.jpg 1x,
                             img/fall-dog-1800.jpg 2x,
-                            img/fall-dong-2700.jpg 3x"
+                            img/fall-dog-2700.jpg 3x"
                     media="(min-width: 900px)">
             <source srcset="img/fall-dog-640.jpg 1x,
                             img/fall-dog-1280.jpg 2x,
